@@ -10,8 +10,8 @@ def organize_files(directory: Path):
     for item in directory.iterdir():
         if item.is_file():
             # Extract the file extension
-            extension = item.suffix[1:]  # Remove the leading dot from the extension
-            if extension:  # Only proceed if the file has an extension
+            extension = item.suffix[1:]   # Remove the leading dot from the extension
+            if extension:   # Only proceed if the file has an extension
                 extension_folder = directory / extension
 
                 # Create the folder for the extension if it doesn't exist
